@@ -1,0 +1,153 @@
+<!-- for comments go to css of this page  -->
+<!-- make your desktop screen 480p wide using inspect t hrouh chrome to use this html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaar Me Page</title>
+    <link rel="stylesheet" href="page_for_mobile.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- creating the top most options -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </li>
+            <li>
+                <div class="search-option">
+                    <a href="#" class="search"><i class="fa fa-search" aria-hidden="true"></i><input type="search"
+                            id="searchin-opt" name="s" placeholder="  Search..."
+                            aria-label="search through the site content">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </nav>
+    <!-- creating the top pattern behind the profile photo -->
+    <div class="pattern_top">
+
+    </div>
+
+    <!-- creating the profile photo and its option  -->
+
+    <section class="conatiner0">
+        <a href="" class="profile">
+            <img class="profile" src="logo.jpeg" alt="profile">
+        </a>
+
+        <span class="pencil_edit">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+        </span>
+        <span class="forward">
+            <i class="fa fa-share" aria-hidden="true"></i>
+        </span>
+
+    </section>
+    <!-- writing the names and information about user -->
+    <div class="container1">
+        <h2 class="heading">YaarMe</h2>
+        <!-- creating information as list -->
+        <ul>
+            <li>
+                <a href="#" class="i1 ">Information Technology & Services</a> <span class="dot1"><i
+                        class=" fa fa-circle" aria-hidden="true"></i></span>
+            </li>
+            <li>
+                <a href="#" class="i2">Rajpur, Chhattisgarh</a>
+            </li>
+        </ul>
+        <a href="#" class="follow">113 followers</a>
+        <p>Building the world's most luxurious social media.</p>
+    </div>
+
+    <!-- giving gaps between differnet sections -->
+
+    <div class="gap"></div>
+
+    <!-- creating information about the post such as date and time -->
+    <div class="container2">
+        <p class="post1">
+            Posted by Akash Ranjan Verma - 7/11/2020
+        </p>
+        <!-- giving gap again -->
+        <div class="gap2"></div>
+
+        <!-- making the post card as given in the screenshot -->
+        <div>
+            <img class="img" src="logo.jpeg" alt="profile">
+
+        </div>
+        <div class="org_post">
+            <ul>
+
+                <li class="l1">YaarMe</li>
+                <li class="l1">113 followers</li>
+
+
+                <li class="l1">6mo <span class="dot"><i class=" fa fa-circle" aria-hidden="true"></i></span><span
+                        class="globe"><i class="fa fa-globe" aria-hidden="true"></i></span> </li>
+
+
+            </ul>
+            <a href="#" class="go2"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            <p class="para2">
+                We have just started working to develop a social media platform which aim to connect you with your
+                friends and family in most convenient way <span id="more">.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quia
+                    velit animi delectus deleniti nesciunt ducimus ex iure odio. Libero repudiandae voluptates ipsum
+                    cum!
+                    Minima, ducimus earum esse dolorem beatae in.</span><span class="read" id="read"
+                    onclick="read()">...see more</span>
+            </p>
+            <a href="#" class="img1"><img src="image_of_post.jpeg" alt="Image"></a>
+
+            <!-- giving the name of the user with edit option -->
+            <p class="para3">
+                YaarMe <span class="edit3"> <a href="#" class="edit2"><i class="edit2 fa fa-pencil-square-o"
+                            aria-hidden="true"></i></a></span>
+            </p>
+            <!-- giving the website name of the organization -->
+
+            <p class="web_name">yaarme.com</p>
+        </div>
+    </div>
+
+    <!-- adding java for see less and see more option  -->
+
+    <script type="text/javascript">
+        var i = 0;
+        function read() {
+            if (!i) {
+                document.getElementById("more").style.
+                    display = "inline";
+
+                document.getElementById("read").innerHTML =
+                    "            ...see less";
+                i = 1;
+            } else {
+                document.getElementById("more").style.
+                    display = "none";
+
+                document.getElementById("read").innerHTML =
+                    "...see more";
+                i = 0;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

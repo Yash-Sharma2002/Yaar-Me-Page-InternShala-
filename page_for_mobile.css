@@ -1,0 +1,266 @@
+
+
+
+/* making the screen only for phones with max widh of 480px */
+ @media only screen and (max-width:480px)
+{ 
+
+body {
+
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+
+/* giving p tags its margin */
+
+P{
+    margin-left: 0.7em;
+}
+
+/* creating the top  */
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+/* i can also use display: flex; but i like inline more because it automaticaly remove list style from all lists */
+nav ul li{
+    display: inline;
+    color: grey;
+}
+nav ul li:first-child{
+    font-size: 20px;
+    margin-left: -38px;
+}
+nav ul li:nth-last-child(2){
+    font-size: 20px;
+    margin-left: 6rem;
+}
+nav ul li:last-child{
+    font-size: 20px;
+    display: block;
+  
+    margin-top: -25px;
+    
+    margin-left: 26rem;
+}
+/* making the search bar */
+/* i can make this truely working by using javascript */
+a.search{
+    color: grey;
+}
+#searchin-opt{
+    width: 333px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: grey;
+    height: 31px;
+}
+div.search-option{
+    border-bottom: 2px solid grey;
+    margin-left: 8px;
+    margin-top: -30px;
+    width: 22rem;
+}
+/* giving the top pattern which is before the profile */
+.pattern_top{
+    height: 8rem;
+    background:linear-gradient(90deg,#F2994A 50%,#F2C94C 20%);
+    width: 110%;
+  margin-top: -4px;
+   margin-left: -1rem;
+
+}
+
+/* styling profile image  */
+
+section img{
+    height: 5rem;
+    margin-left: 12px;
+    margin-top: -38px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 1px 15px rgba(52, 48, 48, 0.3);
+}
+/* styling edit button  */
+.pencil_edit{
+    font-size: 45px;
+    color: blue;
+    display: block;
+    margin-left: 321px;
+    margin-top: -68px;
+}
+/* styling share button  */
+.forward{
+    font-size: 45px;
+    color: blue;
+    display: block;
+    margin-left: 407px;
+    margin-top: -51px;
+}
+/* next section of information of profile is here  */
+/* name is here  */
+.heading{
+    color:black;
+    font-weight: 100;
+    padding:0px;
+    margin: 0px 10px;
+}
+/* about the person in the list with dots seperated */
+.container1 ul{
+    list-style: disc;
+    padding-left: 0.7em;
+    margin: 5px 0px ;
+}
+.container1 ul li{
+    display: inline-block;
+    list-style: disc;
+}
+.container1 ul li a{
+    /* display: block; */
+    color: grey;
+    text-decoration: none;
+    /* list-style-type: disc; */
+}
+
+
+.container1 ul li:first-child{
+    margin-right: 18px;
+}
+/* creating dots of correct size between different information of person or organization */
+.dot1{
+    position: absolute;
+    margin-top: 7px;
+    color:grey;
+    font-size: 4px;
+    margin-left: 9px;
+}
+
+/* making followers option as anchor tag so anyone can see the followers */
+.container1 .follow{
+    display: block;
+    text-decoration: none;
+    color:rgb(9, 50, 255) ;
+    padding:0px 10px;
+    text-decoration: none;
+    
+
+}
+/* giving gap tp different sections so its easiliy differntiable and understandable */
+
+div.gap{
+    background-color: rgb(213, 210, 210);
+    border: 2px solid rgb(213, 210, 210);
+    margin: 0px -10px;
+    padding: 0px;
+}
+div.gap2{
+    background-color: rgb(209, 205, 205);
+    border: 1px solid  rgb(209, 205, 205);
+    margin: 0px -10px;
+    padding: 0px;  
+}
+/* i like to work with different margins without using any auto beacuse it stricly bends the website and bugs are less  */
+
+/* making profile option in the posts with menu option at the right side  */
+
+
+div img{
+    display: inline;
+    height: 3rem;
+    margin-top: 13px;
+    margin-left: 8px;
+}
+
+/* creating information about the posts in flex with current profile photo */
+
+.container2 ul{
+    margin-top: -60px;
+    margin-left: 21px;
+}
+.container2 ul li{
+    display: block;
+    color: grey;
+    font-size: 16px;
+    list-style: none;
+
+}
+.container2 ul li:first-child{
+    color: black;
+}
+
+
+
+/* Making The dots of Correct Size and margin  between 6mo and globe icon*/
+.dot{
+    position: absolute;
+    margin-top: 7px;
+    color:grey;
+    font-size: 4px;
+    /* margin-left: 3px; */
+}
+
+/* making The globe icon of correct size and margin */
+.globe{
+    margin-left: 7px;
+}
+
+/* making side by side dropdown option of correct size */
+.go2{
+    display: block;
+    margin-top: -74px;
+    margin-left: 444px;
+}
+
+/* separating paragraph from top  */
+.para2{
+    margin-top: 49px;
+}
+/* here making see less and see more option  */
+span#dots, span.read{
+    color: grey;
+    cursor: pointer;
+}
+#more{
+    display: none;
+}
+
+/* making the post image of correct size */
+.org_post img{
+    height: 17rem;
+    margin-top: -10px;
+    margin-bottom: -43px;
+}
+/* making post edit option here  */
+.edit3{
+    margin-left: 19rem;
+}
+.edit2{
+    display: inline;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    margin-left: 3px;
+    padding: 19px 11px;
+    background-color: rgb(9, 50, 255);
+
+}
+
+
+
+/* creating webisite name styles  */
+.web_name{
+    color: grey;
+   
+    margin-top: -25px ;
+    margin-bottom:1rem;
+}
+
+
+}
+/* I have done this page with the help of my laptop and i have done my best in the given time */
+
+
+
+
